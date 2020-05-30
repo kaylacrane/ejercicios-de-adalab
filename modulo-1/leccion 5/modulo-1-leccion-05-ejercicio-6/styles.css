@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.div4 {
+  height: 100px;
+  background-color: yellow;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

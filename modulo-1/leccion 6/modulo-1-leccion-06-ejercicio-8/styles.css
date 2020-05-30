@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: grey;
+  font-size: 14px;
+}
+
+.header {
+  background-color: grey;
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.links {
+  background-color: rgb(50, 182, 138);
+}
+
+.main {
+  background-color: rgb(108, 67, 141);
+}
+.main-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+
+.text-and-block {
+  border: 1px rgb(11, 48, 11) solid;
+}
+.aside {
+  background-color: rgb(161, 172, 66);
+}
+
+.aside-title {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .aside {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+  .links {
+    width: 25%;
+    float: left;
+  }
+  .main,
+  .aside {
+    width: 70%;
+    float: right;
+    margin-right: 20px;
+  }
+
+  .text-and-block {
+    position: relative;
+    height: ;
+  }
+
+  .text-and-block div {
+    width: 48%;
+    /* display: inline-block; */
+  }
+  .main-title {
+    width: 100%;
+  }
+
+  .text {
+    float: left;
+  }
+
+  .block {
+    height: 80%;
+    position: absolute;
+    right: 0px;
+
+    float: right;
+    background-color: cornflowerblue;
+    z-index: 1;
+  }
+  .header {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .aside {
+  }
+}

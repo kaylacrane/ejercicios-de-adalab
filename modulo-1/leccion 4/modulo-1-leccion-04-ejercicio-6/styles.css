@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  /* flex-direction: column; */
+  min-height: 100vh;
+  flex-wrap: wrap;
+  min-width: 100%;
+  max-width: 960px;
+  padding: ;
+}
+
+h3 {
+  text-align: center;
+}
+
+header {
+  background-color: rgb(78, 143, 78);
+  flex: 100%;
+}
+
+main {
+  background-color: rgb(78, 78, 150);
+  flex: 70%;
+  display: flex;
+
+  box-sizing: border-box;
+}
+
+.aside1 {
+  background-color: rgb(149, 150, 78);
+  flex: 15%;
+}
+.aside2 {
+  background-color: rgb(149, 150, 78);
+  flex: 15%;
+}
+
+footer {
+  background-color: rgb(187, 98, 98);
+  flex: 100%;
+}

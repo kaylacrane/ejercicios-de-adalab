@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  border: 3px green solid;
+  /* flex-direction: column; */
+  flex-direction: row;
+
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
+}
+
+.box {
+  border: 2px blue solid;
+}

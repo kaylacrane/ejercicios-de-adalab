@@ -1,0 +1,43 @@
+a {
+    color: red;
+  }
+  /*applying changes to a CLASS which can be used with more than one element */
+  .text-link {
+    color: rgb(134, 32, 138);
+  }
+  /*applying changes to an ID which can only be used with one element */
+  #add-user {
+    font-size: 24px;
+  }
+ 
+  .text-link {
+    color: red;
+  }
+   /* pseudo class: hover */
+  .text-link:hover {
+    background-color: red;
+    color: white;
+  }
+
+  /* for mix of classes and IDs */
+  .button {
+    background-color: grey;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 1em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .button--new {
+    background-color: green;
+  }
+  
+  .button--rename {
+    background-color: blue;
+  }
+  
+  .button--delete {
+    background-color: red;
+  }

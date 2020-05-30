@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(189, 189, 189);
+}
+h1 {
+    color: rgb(238, 34, 34);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+h2 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+}
+p {
+    color: #757575;
+    font-family: Georgia;
+    font-size: 18px;
+}
+table, th, td {
+    border: 2px solid black;
+  }
+th, td, caption {
+    padding: 15px;
+  }
+td {
+    text-align: center;
+}
+.meal {
+    text-align: right;
+    font-weight: bold;
+}

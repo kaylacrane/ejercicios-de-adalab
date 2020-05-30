@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Without meta tag below the media queries don't apply. Only works when resizing the browser on a PC-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewport Sample</title>
+    <style>
+      .box {
+        background: red;
+        height: 100px;
+      }
+      @media all and (min-width: 360px) {
+        /* the special conditions we add to media queries are called BREAKPOINTS */
+        .box {
+          background: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

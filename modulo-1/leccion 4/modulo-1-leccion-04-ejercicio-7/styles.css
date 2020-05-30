@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  width: 9%;
+  height: 50%;
+  background-color: grey;
+  /* border: 1px green solid; */
+}

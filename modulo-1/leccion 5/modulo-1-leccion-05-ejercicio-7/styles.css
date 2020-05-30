@@ -1,0 +1,11 @@
+.text p {
+  box-sizing: border-box;
+  background-color: blue;
+  justify-content: center;
+  text-align: center;
+  width: 86%;
+  max-width: 600px;
+}
+body {
+  max-width: 600px;
+}

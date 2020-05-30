@@ -1,0 +1,56 @@
+/* .divPadre {
+  position: absolute;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  margin: 40px;
+  padding: 30px;
+}
+
+.div1 {
+  background-color: blue;
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+
+.div2 {
+  background-color: purple;
+  position: relative;
+  right: 150px;
+  bottom: 320px;
+}
+
+.div3 {
+  background-color: green;
+  position: relative;
+  left: 180px;
+  bottom: 240px;
+} */
+
+.box {
+  height: 300px;
+  width: 300px;
+  margin: 40px;
+  padding: 30px;
+  border: 1px red solid;
+}
+
+.div1 {
+  position: relative;
+  top: 50px;
+  left: 100px;
+}
+.div2 {
+  position: relative;
+  right: 150px;
+  bottom: 320px;
+}
+
+.div3 {
+  position: relative;
+  left: 180px;
+  bottom: 240px;
+}

@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+}
+
+header,
+main,
+footer {
+  padding: 10px;
+}
+
+body {
+}
+
+main {
+  position: relative;
+  top: 40px; /*moves main start down*/
+}
+
+header {
+  background-color: purple;
+  width: 100%;
+  position: fixed;
+  z-index: 990; /* keeps text from overlapping heading when scrolling down*/
+}

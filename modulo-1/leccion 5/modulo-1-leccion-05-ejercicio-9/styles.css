@@ -1,0 +1,11 @@
+.pdf-img {
+  height: 30px;
+}
+
+.download {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  border: 1px red solid;
+  align-items: center;
+}

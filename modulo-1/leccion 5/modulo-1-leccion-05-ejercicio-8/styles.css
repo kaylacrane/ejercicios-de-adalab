@@ -1,0 +1,21 @@
+.pdf-img {
+  max-height: 30px;
+}
+
+/* .download {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  border: 1px red solid;
+  align-items: center;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+} */
+
+.download {
+  display: inline-block;
+  width: 850px;
+  justify-content: space-between;
+  align-items: center;
+}
