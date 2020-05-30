@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+/* to add padding below each section title */
+.heading-format {
+  padding-top: 5px;
+  padding-bottom: 16px;
+  padding-left: 5px;
+}
+
+.header {
+  background-color: lightgrey;
+}
+
+.nav-menu,
+.nav-menu ul a.link {
+  background-color: limegreen;
+  display: block; /* to make links a vertical list */
+}
+
+.main {
+  background: yellow;
+}
+
+.text-block-container {
+  width: 100%;
+  position: relative;
+}
+
+.block {
+  background-color: orange;
+}
+
+.aside {
+  background-color: gray;
+  /*to add "space" between aside and section above */
+  margin: 15px 0px 15px;
+}
+
+.text-format,
+.nav-menu {
+  padding: 5px;
+}
+
+@media all and (max-width: 480px) {
+  .whole {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 1000px) {
+  .nav-menu {
+    float: left;
+    width: 25%;
+  }
+
+  .main,
+  .aside {
+    float: right;
+    width: 70%;
+  }
+
+  .text-block-container {
+    position: relative;
+  }
+
+  .main {
+    position: relative;
+    width: 70%;
+  }
+
+  /* this works because we take the position relationship all the way back to screen size through position:relative and width % of various elements */
+  .block {
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    /*this part is also relative to parent div */
+    right: 0;
+    top: 0;
+  }
+
+  .main-text {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .whole {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .nav-menu,
+  .aside {
+    width: 22%;
+    margin: 0;
+  }
+  .block {
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    /*this part is also relative to parent div */
+    right: 0;
+    top: 0;
+  }
+
+  .main-text {
+    width: 50%;
+  }
+
+  .main {
+    float: right;
+    width: 50%;
+  }
+}

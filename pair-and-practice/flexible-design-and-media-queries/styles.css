@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+}
+
+.header,
+.content,
+.side-content,
+.page-footer {
+  padding: 1em 2em;
+}
+
+.content,
+.side-content,
+.page-footer {
+  float: left;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgb(247, 220, 22);
+  height: 100px;
+}
+
+.content {
+  width: 60%;
+}
+
+.side-content {
+  width: 40%;
+  background-color: rgb(162, 163, 113);
+  height: 500px;
+}
+
+.post {
+  background-color: rgb(117, 255, 26, 0.46);
+  height: 100px;
+  width: px;
+  margin-bottom: 1em;
+}
+
+.page-footer {
+  width: 100%;
+  background-color: #000;
+  height: 50px;
+}
+
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+  .header {
+    background-color: red;
+  }
+  .content,
+  .side-content {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 480) and (max-width: 780px) {
+  .header {
+    background-color: red;
+  }
+  .content,
+  .side-content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header {
+    height: 80px;
+  }
+  .content {
+    background-color: purple;
+  }
+}
