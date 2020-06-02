@@ -1,0 +1,67 @@
+* {
+  /* border: 1px blue solid; */
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  height: 100%; /* height relationships are very important for establishing that the content section will grow to fit screen although content is less */
+}
+
+body {
+  position: relative;
+  min-height: 100%; /* height relationships are very important for establishing that the content section will grow to fit screen although content is less */
+}
+
+.container {
+  margin: 0 20%;
+}
+
+header {
+  background-color: rgb(71, 71, 71);
+  position: fixed;
+  width: 100vw;
+  padding: 1rem 0;
+}
+
+header div.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+header ul.right {
+  width: 11rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+main {
+  min-height: 100%; /* height relationships are very important for establishing that the content section will grow to fit screen although content is less */
+}
+
+main div.container {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+footer {
+  position: absolute;
+  border-top: 1px grey solid;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
+}
+
+footer div.container {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}

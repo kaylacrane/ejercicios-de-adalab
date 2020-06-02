@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  /* % is based on its contents, the text of main */
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: yellow;
+}
+main {
+  background-color: green;
+  flex-grow: 1;
+  /* Grow to fill available space */
+}
+footer {
+  background-color: red;
+  width: 100%;
+  /* using vw will cause scroll bar to appear */
+}
+
+/*sticky footer*/
+
+/*
+.container {
+  height: 100vh; /* % is based on its contents, the text of main
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: yellow;
+}
+main {
+  background-color: green;
+  flex-grow: 1; /* Grow to fill available space 
+}
+footer {
+  background-color: red;
+  width: 100%; /* using vw will cause scroll bar to appear 
+  position: fixed;
+  bottom: 0;
+}
+*/

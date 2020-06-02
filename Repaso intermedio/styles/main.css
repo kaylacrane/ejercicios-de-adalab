@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  color: inherit; /* removes color of links too */
+}
+
+:root {
+  --primary-font: "Montserrat", sans-serif;
+  --regular-weight: 400; /*if we want to set font weights*/
+  --bold-weight: 700;
+  --primary-color: #cc212a;
+  /* fire engine red*/
+  --light-color: white;
+  --dark-color: black;
+}
+
+body {
+  font-family: var(--primary-font); /* can put this in reset *{} above */
+}
+
+h1 {
+  margin: 0; /* can put this in reset *{} above */
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px; /*to keep it from separating too much on big screens*/
+  margin: auto; /*used a lot for containers with width:100% to make margins dynamic once max-width is achieved*/
+  padding: 15px;
+}
+
+/*MAIN*/
+.main {
+  height: 100vh; /* % would be relative to container. we put vh so it is relative to the screen/mobile, etc*/
+  display: flex;
+  flex-direction: column; /*main axis*/
+  justify-content: center;
+  align-items: center;
+}
+.main-title {
+  color: var(--primary-color);
+  text-transform: capitalize; /* to give title text format */
+  font-weight: var(--bold-weight);
+}
+
+.main-title span {
+  display: block; /*splits spans of h1 and puts them one on top of the other*/
+  text-align: center; /*centers spans*/
+}
+
+/*FOOTER*/
+.footer {
+  position: fixed;
+  bottom: 0; /* without this specified the footer is fixed to bottom but we won't see it. it is in fixed position relative to window */
+  width: 100%;
+  border-top: 1px var(--primary-color) solid; /*border: width, color, style*/
+  text-align: center; /*centers line elements (ex: copyright) and works well with spans but NOT divs*/
+}
+
+.footer-logo {
+  background-color: var(--primary-color);
+  /*makes background a circle instead of rectangle*/
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  /*center R in circle*/
+  text-align: center;
+  line-height: 50px; /*same as height of circle. used a lot for forms to center text within boxes*/
+  color: var(--light-color);
+  position: absolute; /*necessary to establish a reference with position:fixed or relative. here it is the footer with position:fixed*/
+  top: 0;
+  left: 50%; /*relative to footer*/
+  transform: translate(
+    -50%,
+    -50%
+  ); /*to make logo circle show over border of footer, and better here rather than top because of references and resizing of screens*/
+}
+
+.footer .wrapper {
+  padding-top: 40px;
+}
+
+@media all and (min-width: 768px) {
+  .footer-logo {
+    position: static; /*removes absolute position so it returns to content flow*/
+    transform: none; /*removes movement relative to self translate()*/
+  }
+  .footer .wrapper {
+    display: flex;
+    flex-direction: row-reverse; /*to reverse logo and copyright*/
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px; /*same as padding above in .wrapper*/
+  }
+}
