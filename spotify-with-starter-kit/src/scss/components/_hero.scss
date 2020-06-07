@@ -1,0 +1,39 @@
+/* HERO */
+
+.hero {
+  background-color: $tertiary-color;
+  color: $light-color;
+
+  .wrapper {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include mediaTablet {
+      background: asset("images", "premium_dancer.png") no-repeat;
+      background-position: right top;
+    }
+    .hero__title {
+      font-size: rem(38);
+
+      @include mediaDesktop {
+        font-size: rem(50);
+      }
+    }
+
+    .hero__text {
+      font-size: rem(22);
+      font-weight: bold;
+
+      @include mediaTablet {
+        font-size: rem(20);
+      }
+    }
+
+    .hero__conditions {
+      font-size: rem(12);
+      padding: 15px 0;
+    }
+  }
+}

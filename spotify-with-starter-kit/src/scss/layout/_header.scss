@@ -1,0 +1,57 @@
+/* HEADER */
+
+.header {
+  background-color: $primary-color;
+}
+
+.header .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: inline-block;
+  width: 100px;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+.header-mobile-button {
+  display: block;
+  background-image: url("../images/menu-icon.png");
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+
+  @include mediaDesktop {
+    display: none;
+  }
+}
+
+.header-menu {
+  list-style-type: none;
+  padding: 0px;
+  color: $light-color;
+  display: none;
+
+  @include mediaDesktop {
+    display: block;
+  }
+}
+
+.header-menu li {
+  display: inline-block;
+}
+
+.header-menu li a {
+  padding: 15px;
+  font-weight: bold;
+}
+
+.header-menu li:nth-child(3):after {
+  content: "|";
+}

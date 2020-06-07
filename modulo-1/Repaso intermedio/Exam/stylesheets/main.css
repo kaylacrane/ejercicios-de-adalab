@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0; /*can put this (or both) above and will reset fine*/
+}
+
+:root {
+  --primary-color: #3cdbc0;
+  --dark-color: #4a4a4a;
+  --light-color: #ffffff;
+  --primary-font: "Rubik", sans-serif;
+  /*can also put variables for font-size, etc as needed*/
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--primary-font);
+  color: var(--dark-color);
+}
+
+.header {
+  /*to put logo and menu one below the other*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 3px 0; /*can split into padding-top and padding-bottom*/
+  position: fixed;
+  width: 100%;
+  top: 0; /*not strictly necessary*/
+  background-color: var(--light-color);
+  /*to keep main from covering up header*/
+  z-index: 1;
+}
+
+.header-logo {
+  /*to change size of logo by limiting its container*/
+  width: 155px;
+  display: inline-block;
+}
+
+.header-logo img {
+  /*to make sure img will fill its container .header-logo*/
+  width: 100%;
+}
+
+.header-menu ul li {
+  display: inline-block;
+}
+
+.header-menu ul li a {
+  text-transform: uppercase;
+  padding: 10px; /*best practice is to put on link instead of li in order to increase clickable space*/
+  display: block; /*to apply padding correclty*/
+}
+
+/*MAIN*/
+.main {
+  height: 100vh;
+  /*align text spans centrally*/
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  /*to make main start below header put position:relative and top to the height of header*/
+  position: relative;
+  top: 118px; /*this puts space above main so that the header doesn't cover any part of main*/
+}
+
+.main-title {
+  font-size: 1.875rem; /*using rems means that it is simple to change the size of all fonts in proportion to each other, for example to make mobile version easier to read.*/
+  text-transform: capitalize; /*to keep style confined to CSS*/
+}
+
+.main-title span {
+  display: block; /*puts lines one below other*/
+}
+
+@media all and (min-width: 768px) {
+  .header {
+    /*to change elements from on top of each other to side-by-side */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .main {
+    top: 105px; /*to account for padding changes in header*/
+  }
+}

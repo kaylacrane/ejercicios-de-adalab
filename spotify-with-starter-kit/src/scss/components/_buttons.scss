@@ -1,0 +1,18 @@
+.button__plans {
+  background-color: $secondary-color;
+  display: inline-block;
+  padding: 15px 50px;
+  width: 100%;
+  border-radius: 45px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: rem(14);
+
+  @include mediaTablet {
+    width: fit-content;
+  }
+
+  @include mediaDesktop {
+    width: fit-content;
+  }
+}

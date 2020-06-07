@@ -1,0 +1,17 @@
+.what-we-do {
+  padding: 25px;
+  text-align: center;
+
+  h2 {
+    text-transform: uppercase;
+    color: $color-primary;
+    font-size: rem(14);
+    padding: 15px;
+  }
+
+  p {
+    font-size: rem(24);
+    font-weight: bold;
+    padding: 15px;
+  }
+}

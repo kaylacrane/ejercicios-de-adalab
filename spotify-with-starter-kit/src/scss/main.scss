@@ -1,0 +1,28 @@
+// Core
+@import "core/reset";
+@import "core/functions";
+@import "core/mixins";
+@import "core/variables";
+
+// Layout
+@import "layout/page";
+@import "layout/header";
+@import "layout/footer";
+// @import "layout/grid";
+
+// Components
+@import "components/buttons";
+// @import "components/forms";
+@import "components/hero";
+// @import "components/typography";
+
+// Pages
+// @import "pages/about-us";
+// @import "pages/contact";
+// @import "pages/home";
+
+.header,
+.main,
+.footer {
+  border: 1px solid red;
+}

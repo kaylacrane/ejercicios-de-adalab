@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="/signup" method="post" action="" class="signup-form">
+        <h1>Create an account</h1>
+        <span>It's free and always will be.</span>
+        <div class="name">
+          <label for="firstName"></label>
+          <input
+            id="firstName"
+            type="text"
+            name="firstName"
+            placeholder="First name"
+            required
+          />
+          <label for="surName"></label>
+          <input
+            id="surName"
+            type="text"
+            name="surName"
+            placeholder="Surname"
+            required
+          />
+        </div>
+        <label for="email"></label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Email or mobile number"
+          required
+        />
+
+        <label for="email"></label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Re-enter email or mobile number"
+          required/>
+
+        <label for="password"></label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          placeholder="New password"
+          required
+        />
+        <div class="birthday">
+          <label for="day">Birthday</label>
+          <br>
+            <select id="day" name="day">
+              <option>Day</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+          </select>
+          <label for="month"></label>
+          <select id="month" name="month">
+              <option>Month</option>
+              <option value="January">January</option>
+              <option value="February">February</option>
+          </select>
+          <label for="year"></label>
+          <select id="year" name="year">
+              <option>Year</option>
+              <option value="1982">1982</option>
+              <option value="1981">1981</option>
+              <option value="1980">1980</option>
+          </div>
+        </select>
+        <div class="gender">
+          <input
+              id="female"
+              type="radio"
+              value="female"
+              name="gender" 
+              class="gender"/>
+          <label for="female">Female</label>
+          
+          <input
+            id="male"
+            type="radio"
+            value="male"
+            name="gender"
+          />
+          <label for="female">Male</label>
+          
+        </div>
+        <label for="signupButton"></label>
+        <input type="submit" value="Create an account" class="button" id="signupButton"/>
+
+        <label for="resetButton"></label>
+        <input type="reset" value="Start over" class="button"/>
+      </form>
+    </div>
+  </body>
+</html>

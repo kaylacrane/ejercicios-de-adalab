@@ -1,0 +1,9 @@
+/* auto convert px to rem */
+@function rem($pixels) {
+  @return ($pixels / $defaultFontSize * 1rem);
+}
+
+/* auto create file paths */
+@function asset($fileType, $file) {
+  @return url($asset-base-path + $fileType + "/" + $file);
+}

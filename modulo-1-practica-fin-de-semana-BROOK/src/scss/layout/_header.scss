@@ -1,0 +1,27 @@
+header {
+  background-color: $color-primary;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+}
+header .wrapper {
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*centers hamburger vertically*/
+}
+
+.header-menu {
+  display: none; /*makes link names invisible in mobile*/
+
+  @include viewTabletPC {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.menu-icon {
+  @include viewTabletPC {
+    display: none;
+  }
+}
