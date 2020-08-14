@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container-fluid {
+        display: grid;
+      }
+      .row .col {
+        border: 1px red solid;
+        padding: 0;
+        height: 20px;
+      }
+      .row div img {
+        width: 100%;
+      }
+      .row div img:hover {
+        width: 100%;
+        image-orientation: flip;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12"><img src="./images/img-hero-2.jpg" alt="" /></div>
+      </div>
+      <div class="row">
+        <div class="col col-xs-12 col-md-6 col-lg-3">
+          <img src="./images/cat-1.jpg" alt="" />
+        </div>
+        <div class="col col-xs-12 col-md-6 col-lg-3">
+          <img src="./images/img-hero-2.jpg" alt="" />
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3">col</div>
+        <div class="col-xs-12 col-md-6 col-lg-3">col</div>
+      </div>
+      <div class="row"></div>
+      <div class="row"></div>
+    </div>
+  </body>
+</html>

@@ -13,12 +13,21 @@
     @include mediaTablet {
       background: asset("images", "premium_dancer.png") no-repeat;
       background-position: right top;
+      background-size: 50%;
+      animation-name: intro;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+      animation-timing-function: linear;
     }
     .hero__title {
       font-size: rem(38);
 
       @include mediaDesktop {
         font-size: rem(50);
+      }
+
+      &span {
+        display: block;
       }
     }
 
@@ -30,10 +39,20 @@
         font-size: rem(20);
       }
     }
+  }
+}
 
-    .hero__conditions {
-      font-size: rem(12);
-      padding: 15px 0;
-    }
+@keyframes intro {
+  from {
+    background-size: 60%;
+  }
+
+  to {
+    background-size: 50%; /*same as above in actual element*/
+  }
+}
+@media all and (min-width: 768px) and (orientation: portrait) {
+  .hero .wrapper {
+    background-position: right bottom;
   }
 }

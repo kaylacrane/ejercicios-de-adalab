@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        padding: 0;
+        margin: 5px 10px;
+        box-sizing: border-box;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 35vw;
+      }
+      .twitter-share-button {
+        background-color: #38a1f3;
+        color: white;
+        padding: 10px 15px;
+        outline-style: solid;
+        border-radius: 15px;
+        text-decoration: none;
+      }
+    </style>
+    <title>Twitter Share</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <label for="name">Nombre completo: </label>
+      <input type="text" name="name" id="name" />
+
+      <label for="job">Profesión: </label>
+      <input type="text" name="job" id="job" />
+
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email" />
+
+      <label for="phone">Teléfono: </label>
+      <input type="phone" name="phone" id="phone" />
+
+      <label for="linkedin">LinkedIn: </label>
+      <input type="linkedin" name="linkedin" id="linkedin" />
+
+      <label for="github">GitHub: </label>
+      <input type="github" name="github" id="github" />
+      <input type="file" name="photo" id="img-selector" />
+      <input type="hidden" name="palette" value="1" />
+      <input type="hidden" name="typography" value="1" />
+
+      <button type="button" id="submit">Enviar</button>
+    </form>
+    <div class="twitter-section">
+      <p class="card-lin"><a href="" class="twitter-url"></a></p>
+      <a href="#" class="twitter-share-button" id="tweetButton"
+        >Share on Twitter</a
+      >
+    </div>
+    <p class="response"></p>
+    <script
+      src="https://kit.fontawesome.com/487df2ea51.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>

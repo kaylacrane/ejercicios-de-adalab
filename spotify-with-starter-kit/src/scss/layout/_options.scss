@@ -1,0 +1,52 @@
+.options {
+  text-align: center;
+}
+
+.secondary-title {
+  font-size: rem(20);
+}
+
+/* what is options-items?? */
+.options-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.option {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.option-img {
+  flex-shrink: 0;
+  /*to keep img from getting too small*/
+}
+
+.option-img img {
+  width: 100%;
+  max-width: 180px;
+}
+
+@media all and (min-width: 768px) {
+  .option {
+    width: 50%;
+  }
+
+  .options-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .option {
+    width: 25%;
+    flex-direction: column;
+  }
+  .options-items {
+    text-align: center;
+  }
+}

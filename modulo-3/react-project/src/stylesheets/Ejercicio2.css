@@ -1,0 +1,16 @@
+.halfPage {
+  width: 50vw;
+  height: 100vh;
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.halfPage-text {
+  color: lightcoral;
+  font-size: 34px;
+}
+.halfPage-text2 {
+  color: lightseagreen;
+  font-size: 24px;
+}

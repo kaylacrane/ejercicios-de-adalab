@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+.title {
+  color: purple;
+  text-align: center;
+}
+.js-user-list {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.js-userName {
+  font-weight: bold;
+  margin: 20px;
+}
+.js-userPhoto {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+.js-userProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.js-favorite {
+  background-color: rgb(127, 127, 189);
+}

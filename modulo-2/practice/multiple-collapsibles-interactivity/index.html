@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/c75582e3c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        padding: 10px;
+      }
+      .collapsible {
+        width: 400px;
+      }
+      .title {
+        background-color: pink;
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .js-title-active {
+        opacity: 0.5;
+        color: rgb(141, 74, 85);
+      }
+
+      .text {
+        background-color: bisque;
+        padding: 0 8px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.5s;
+      }
+    </style>
+    <title>collapsible practice</title>
+  </head>
+  <body>
+    <div class="js-collapsible collapsible">
+      <div class="js-title title">
+        <span>This is the title bar</span>
+        <i class="js-icon fas fa-leaf"></i>
+      </div>
+      <div class="js-text text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui atque
+          voluptatibus repellendus voluptas similique fugiat, laboriosam
+          consequuntur quam adipisci earum quisquam molestias quod accusamus
+          asperiores delectus, facere illum? Illo, deleniti?
+        </p>
+      </div>
+    </div>
+    <div class="js-collapsible collapsible">
+      <div class="js-title title">
+        <span>This is the title bar</span><i class="js-icon fas fa-leaf"></i>
+      </div>
+      <div class="js-text text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui atque
+          voluptatibus repellendus voluptas similique fugiat, laboriosam
+          consequuntur quam adipisci earum quisquam molestias quod accusamus
+          asperiores delectus, facere illum? Illo, deleniti?
+        </p>
+      </div>
+    </div>
+    <div class="js-collapsible collapsible">
+      <div class="js-title title">
+        <span>This is the title bar</span><i class="js-icon fas fa-leaf"></i>
+      </div>
+      <div class="js-text text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui atque
+          voluptatibus repellendus voluptas similique fugiat, laboriosam
+          consequuntur quam adipisci earum quisquam molestias quod accusamus
+          asperiores delectus, facere illum? Illo, deleniti?
+        </p>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/487df2ea51.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>

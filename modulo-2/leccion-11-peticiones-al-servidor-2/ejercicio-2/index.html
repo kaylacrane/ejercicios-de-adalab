@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      .resultsBox {
+        border: 1px solid green;
+        width: 30vw;
+        min-height: 50px;
+        margin-top: 20px;
+      }
+    </style>
+    <title>Ejercicio 2</title>
+  </head>
+  <body>
+    <h1>Search SWAPI</h1>
+    <form action="get">
+      <input type="text" class="js-searchText" />
+      <input type="submit" class="js-submitButton" value="Search" />
+    </form>
+    <div class="resultsBox">
+      <span>Results:</span>
+      <ul class="js-result"></ul>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

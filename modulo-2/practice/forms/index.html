@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experimenting with forms</title>
+  </head>
+  <body>
+    <form action="" class="form">
+      <input type="reset" />
+      <fieldset class="personalize">
+        <legend>Add your personal info</legend>
+
+        <label for="full-name" class="full-name"
+          >Full Name
+          <input
+            type="text"
+            id="full-name"
+            name="fullName"
+            placeholder="Jane Doe"
+            class="js-fullname"
+          />
+        </label>
+        <label for="profession" class="profession"
+          >Profession<input
+            type="text"
+            id="profession"
+            name="profession"
+            class="js-profession"
+            placeholder="Geologist"
+        /></label>
+      </fieldset>
+      <fieldset class="select">
+        <legend>Choose an option</legend>
+        <input
+          type="radio"
+          name="preference"
+          value="breakfast"
+          id="breakfast"
+          checked
+        />
+        <label for="breakfast">Breakfast</label>
+
+        <input type="radio" name="preference" value="lunch" id="lunch" />
+        <label for="lunch">Lunch</label>
+        <input type="radio" name="preference" value="dinner" id="dinner" />
+        <label for="dinner">Dinner</label>
+      </fieldset>
+    </form>
+    <script src="./main.js"></script>
+  </body>
+</html>

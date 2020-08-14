@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 10px;
+      }
+      .section1 {
+        margin-bottom: 20px;
+        width: 400px;
+      }
+      .collapsible_title_bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid green;
+        padding: 5px 10px;
+      }
+
+      .color {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+      }
+      .green {
+        background-color: green;
+      }
+      .orange {
+        background-color: orange;
+      }
+      .pink {
+        background-color: pink;
+      }
+      .colors_options {
+        width: 100%;
+        border: 1px solid blue;
+      }
+      .colors_options label {
+        display: flex;
+        justify-content: flex-end;
+
+        padding: 5px 10px;
+      }
+      .hidden {
+        display: none;
+        /* second type of collapsible */
+      }
+      .collapsible2 {
+        width: 300px;
+        background-color: rgb(121, 174, 199);
+      }
+      .collapsible__button {
+        width: 100%;
+        text-align: left;
+        font-weight: 600;
+        padding: 5px 10px;
+        background-color: rgb(104, 51, 141);
+        border: none;
+      }
+      .collapsible__button--active {
+        background-color: rgb(109, 81, 129);
+      }
+      .collapsible__button--active:after {
+        content: "\25BB";
+      }
+
+      .collapsible__button:after {
+        content: "\25BC";
+        float: right;
+      }
+      .collapsible__content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s;
+        padding: 0 10px;
+      }
+    </style>
+    <title>collapsible practice</title>
+  </head>
+  <body>
+    <section class="section1">
+      <form action="">
+        <div class="collapsible_title_bar">
+          <span class="title">Colors</span
+          ><i class="chevron fas fa-chevron-up"></i>
+        </div>
+        <div class="colors_options hidden">
+          <label for="green"
+            ><input type="radio" id="green" selected />
+            <div class="color green"></div
+          ></label>
+          <label for="pink"
+            ><input type="radio" id="pink" />
+            <div class="color pink"></div
+          ></label>
+          <label for="orange"
+            ><input type="radio" id="orange" />
+            <div class="color orange"></div
+          ></label>
+        </div>
+      </form>
+    </section>
+    <section class="section2">
+      <div class="collapsible2">
+        <button class="collapsible__button">Section Title</button>
+        <div class="collapsible__content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            rerum eos possimus molestias, doloremque libero nihil cum,
+            distinctio rem delectus consectetur ad atque quam consequuntur odio,
+            quo ratione provident maiores.
+          </p>
+        </div>
+      </div>
+      <div class="collapsible2">
+        <button class="collapsible__button">Section Title 2</button>
+        <div class="collapsible__content">
+          <p>
+            Expedita rerum eos possimus molestias, doloremque libero nihil cum,
+            distinctio rem delectus consectetur ad atque quam consequuntur odio,
+            quo ratione provident maiores. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/487df2ea51.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>

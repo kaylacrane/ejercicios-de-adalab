@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <title>Grid</title>
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 100px 50px;
+        grid-template-areas: "header header" "main aside" "footer footer";
+        grid-gap: 5px;
+      }
+      .item {
+        background: #89ece1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item--header {
+        grid-area: header;
+      }
+      .item--main {
+        grid-area: aside;
+      }
+      .item--aside {
+        grid-area: main;
+      }
+      .item--footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item--header">Header</div>
+      <div class="item item--main">Main</div>
+      <div class="item item--aside">Aside</div>
+      <div class="item item--footer">Footer</div>
+    </div>
+  </body>
+</html>

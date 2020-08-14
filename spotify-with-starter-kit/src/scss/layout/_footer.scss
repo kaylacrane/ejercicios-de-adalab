@@ -1,0 +1,39 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+}
+
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .wrapper nav {
+  grid-column: span 2;
+  padding-top: 15px;
+}
+
+.footer-menu li {
+  display: inline;
+}
+
+.footer-menu li:last-child {
+  display: block;
+  width: 100%;
+}
+.footer-menu li a {
+  padding: 5px;
+}
+
+.copy span {
+  display: block;
+  text-align: right;
+}
+
+@media all and (min-width: 768px) {
+  .footer-menu li:last-child {
+    display: inline;
+    width: auto;
+  }
+}

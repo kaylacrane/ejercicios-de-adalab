@@ -50,6 +50,10 @@
 .header-menu li a {
   padding: 15px;
   font-weight: bold;
+  transition: color 1s ease;
+}
+.header-menu li a:hover {
+  color: $secondary-color;
 }
 
 .header-menu li:nth-child(3):after {

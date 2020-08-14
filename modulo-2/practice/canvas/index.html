@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experimenting with forms</title>
+    <style>
+      .block {
+        background: blue;
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block" id="capture"></div>
+
+    <div class="displayBlock"></div>
+    <canvas
+      id="myCanvas"
+      width="400"
+      height="250"
+      style="border: 2px solid #000;"
+    ></canvas>
+
+    <img src="" id="imgConverted" alt="" style="border: 2px solid red;" />
+    <button type="button" class="btnDisplay">Display</button>
+    <a href="" class="btnDownload"><button type="button">Download</button></a>
+
+    <script src="./main.js"></script>
+    <script src="./html2canvas.js"></script>
+  </body>
+</html>
